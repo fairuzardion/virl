@@ -1,7 +1,6 @@
-<img width="470" height="470" alt="virl" src="https://github.com/user-attachments/assets/3661e31f-4fdd-4067-a66c-c91e197c49fe" />
 
 <p align="center">
-  <b>Python-like simplicity with C/C++-like structure.</b><br>
+  <b>. VIRL is Python-like simplicity with C/C++-like structure.</b><br>
   A small, general-purpose programming language with a real tree-walking interpreter.
 </p>
 

@@ -1,0 +1,41 @@
+// builtins_demo.virl
+// Tours the standard builtin library: core, math, string, and array
+// functions. Run with `./bin/virl examples/builtins_demo.virl`.
+
+fn main() {
+    print("--- core ---");
+    print(typeof(42), typeof("hi"), typeof(true), typeof(null), typeof([1]));
+    print(toString(3.5) + " chars long: " + toString(len(toString(3.5))));
+    print(toNumber("42") + 8);
+    print(range(0, 10, 2)); // step of 2
+
+    print("--- math ---");
+    print(abs(-7));
+    print(sqrt(64));
+    print(pow(2, 10));
+    print(min(4, 1, 9, 2));
+    print(max([4, 1, 9, 2]));
+    print(floor(3.9), ceil(3.1), round(3.5));
+
+    print("--- string ---");
+    print(upper("virl"));
+    print(lower("VIRL"));
+    print(trim("   padded   ") + "|");
+    let parts = split("a,b,c", ",");
+    print(parts);
+    print(join(parts, " - "));
+    print(contains("hello world", "world"));
+    print(replace("banana", "a", "o"));
+    print(substring("hello virl", 6, 10));
+
+    print("--- array ---");
+    let nums = [5, 3, 1, 4, 2];
+    push(nums, 6);
+    print(nums);
+    print(pop(nums));
+    print(first(nums), last(nums));
+    print(sort(nums));
+    print(reverse(nums));
+    print(slice(nums, 1, 3));
+    print(indexOf(nums, 3));
+}

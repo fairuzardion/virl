@@ -1,0 +1,33 @@
+// showcase.virl
+// Demonstrates integers, floats, booleans, arrays, operators, and comments.
+
+const pi = 3.14159;
+
+fn main() {
+    let count = 10;        // integer
+    let ratio = 0.5;       // float
+    let isReady = true;    // boolean
+    let isDone = false;
+
+    let numbers = [1, 2, 3, 4, 5];
+
+    // the block below just exercises every supported operator
+    // so the lexer has something to chew on
+    if count >= 5 && isReady {
+        let total = count + numbers[0] - 1;
+        let scaled = total * ratio / 2;
+        let remainder = count % 3;
+
+        while count > 0 {
+            count = count - 1;
+        }
+
+        if isDone == false || isReady != false {
+            print("still going");
+        }
+    }
+
+    for i in range(0, 5) {
+        print(i);
+    }
+}
